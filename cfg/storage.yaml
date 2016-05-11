@@ -1,0 +1,8 @@
+storage:
+    !include : common.yaml
+    vm_series: !mux
+        SA1: 
+            vm_size: "Small"
+    vm_name: !mux
+        vm_name: "walastorage"
+

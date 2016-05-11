@@ -1,0 +1,12 @@
+wala_conf:
+    !include : common.yaml
+    azure_mode:
+        !remove_node : arm
+    vm_series: !mux
+        SA1: 
+            vm_size: "Small"
+        SA2:
+            vm_size: "Large"
+    vm_name: !mux
+        vm_name: "walaautoconf"
+

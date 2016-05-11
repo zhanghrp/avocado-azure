@@ -1,0 +1,14 @@
+life_cycle:
+    !include : common.yaml
+    vm_series: !mux
+        SA1: 
+            vm_size: "Standard_A1"
+        SA6:
+            vm_size: "Standard_A6"
+        SD1:
+            vm_size: "Standard_D1"
+        SD4:
+            vm_size: "Standard_D4"
+    vm_name: !mux
+        vm_name: "walaautolc"
+

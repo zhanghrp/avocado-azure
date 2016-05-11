@@ -1,0 +1,29 @@
+AzureSub:
+    username: huzhan@mheslinredhat.onmicrosoft.com
+    password: Zh8771041!1
+azure_mode: !mux
+    asm:
+        azure_mode: "asm"
+        resourceGroup:
+            rg_name: walaautoasmeastus
+            region: eastus
+            storage_account: walaautoasmeastus
+            container: vhds
+    arm:
+        azure_mode: "arm"
+        resourceGroup:
+            rg_name: walaautoasmeastus
+            region: westus
+            storage_account: walaautoasmeastus
+            container: vhds
+VMUser:
+    username: azureuser
+    password: RedHatAzure1!
+DiskBlob:
+    name: nay-rhel68-201603150-wala2018rc4-img1.vhd
+    url: https://walaautoasmeastus.blob.core.windows.net/vhds/nay-rhel68-201603150-wala2018rc4-img1.vhd
+    location: "East US"
+Image:
+    name: walaauto-RHEL-6.8-20160315.0-wala2.0.18.rc4
+    location: "East US"
+
